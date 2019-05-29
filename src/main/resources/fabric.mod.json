@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "extracraftx.autowalk",
+  "version": "${0.0.0}",
+
+  "name": "AutoWalk",
+  "description": "Adds a keybind to allow you to automatically walk in Minecraft!",
+  "authors": [
+    "ExtraCrafTX"
+  ],
+  "contact": {
+    "homepage": "https://kaamiljasani.com/"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.fabricmc.example.ExampleMod"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+
+  "requires": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
