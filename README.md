@@ -1,2 +1,2 @@
-# AutoWalk for minecraft
-Adds a keybind to allow you to automatically walk in Minecraft!
+# ToggleWalk for minecraft
+Makes it so that pressing the walk and sneak buttons toggles them instead!

@@ -1,11 +1,11 @@
 {
   "required": true,
-  "package": "net.fabricmc.example.mixin",
+  "package": "com.extracraftx.minecraft.togglewalk.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
   ],
   "client": [
-    "ExampleMixin"
+    "KeyBindingMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "extracraftx.autowalk",
-  "version": "${0.0.0}",
+  "id": "extracraftx_togglewalk",
+  "version": "${0.1.0}",
 
-  "name": "AutoWalk",
-  "description": "Adds a keybind to allow you to automatically walk in Minecraft!",
+  "name": "ToggleWalk",
+  "description": "Makes it so that various controls in Minecraft now toggle instead!",
   "authors": [
     "ExtraCrafTX"
   ],
@@ -13,16 +13,16 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/extracraftx_togglewalk/icon.png",
 
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.extracraftx.minecraft.togglewalk.ToggleWalk"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "extracraftx_togglewalk.mixins.json"
   ],
 
   "requires": {
