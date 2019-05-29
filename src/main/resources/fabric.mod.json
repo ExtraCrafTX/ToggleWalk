@@ -9,7 +9,8 @@
     "ExtraCrafTX"
   ],
   "contact": {
-    "homepage": "https://kaamiljasani.com/"
+    "homepage": "https://kaamiljasani.com/",
+    "sources": "https://github.com/ExtraCrafTX/ToggleWalk"
   },
 
   "license": "CC0-1.0",
