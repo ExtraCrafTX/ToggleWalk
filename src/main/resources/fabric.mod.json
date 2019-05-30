@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "extracraftx_togglewalk",
-  "version": "${0.1.0}",
+  "version": "0.1.0",
 
   "name": "ToggleWalk",
   "description": "Makes it so that various controls in Minecraft now toggle instead!",
@@ -13,10 +13,10 @@
     "sources": "https://github.com/ExtraCrafTX/ToggleWalk"
   },
 
-  "license": "CC0-1.0",
+  "license": "CC BY-NC-SA 4.0",
   "icon": "assets/extracraftx_togglewalk/icon.png",
 
-  "environment": "client",
+  "environment": "*",
   "entrypoints": {
     "main": [
       "com.extracraftx.minecraft.togglewalk.ToggleWalk"
@@ -30,7 +30,7 @@
     "fabricloader": ">=0.4.0",
     "fabric": "*"
   },
-  "suggests": {
-    "flamingo": "*"
+  "custom": {
+    "modmenu:clientsideOnly": true
   }
 }

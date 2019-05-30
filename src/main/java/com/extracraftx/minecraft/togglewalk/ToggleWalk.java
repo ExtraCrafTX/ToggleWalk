@@ -20,24 +20,30 @@ public class ToggleWalk implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        System.out.println("OnInitClient");
         ClientTickCallback.EVENT.register((mc)->{
             onTick(mc);
         });
     }
 
     public void onTick(MinecraftClient mc){
+        // System.out.println("OnTick");
         if(bindings == null){
+            System.out.println("BindingsArrayUpdated");
             bindings = new KeyBinding[]{mc.options.keyForward, mc.options.keySneak};
         }
         for(KeyBinding kb : bindings){
             if(!toggles.containsKey(kb)){
+                System.out.println("KeyBind " + kb.getLocalizedName() + " added to map");
                 toggles.put(kb, false);
             }
             if(kb.wasPressed()){
+                System.out.println("KeyBind " + kb.getName() + " was pressed/toggled " + toggles.get(kb));
                 toggles.put(kb, !toggles.get(kb));
                 ToggleableKeyBinding tkb = (ToggleableKeyBinding)kb;
                 tkb.setToggled(toggles.get(kb));
             }
+            // System.out.println(kb.getLocalizedName() + " isPressed " + kb.isPressed() + " in " + mc.getClass().getName());
         }
     }
 

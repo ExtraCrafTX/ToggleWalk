@@ -22,10 +22,12 @@ public abstract class KeyBindingMixin implements ToggleableKeyBinding{
 
     @Override
     public void setToggled(boolean value) {
+        System.out.println(value);
         toggled = value;
     }
     
     public boolean isPressed() {
+        System.out.println("isPressed " + (pressed || toggled));
         return pressed || toggled;
     }
 
